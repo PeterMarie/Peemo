@@ -4,7 +4,7 @@ pragma solidity >=0.6.0 <0.9.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract PeemoTestPlayerManager is Ownable {
+contract PlayerManager is Ownable {
     address token;
     address stake_manager;
     address unclaimed_peem_holder;
@@ -20,7 +20,7 @@ contract PeemoTestPlayerManager is Ownable {
         string first_name;
         string last_name;
         uint time_joined;
-        uint8 verifiedstatus;
+        VERIFIED_STATUS verifiedstatus;
         uint unclaimedpeem;
     }
     mapping(uint=>Players) playeridtodetails;

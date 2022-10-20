@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract PeemoTester is ERC20, Ownable {
 
-    constructor(uint _initialSupply) ERC20("PeemoTester", "PMT"){
+    constructor(uint _initialSupply) ERC20("Peemo", "PEEM"){
         _mint(msg.sender, _initialSupply);
     }
 

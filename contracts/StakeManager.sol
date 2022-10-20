@@ -4,7 +4,7 @@ pragma solidity >=0.6.0 <0.9.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract PeemoTestStakeManager is Ownable {
+contract StakeManager is Ownable {
     address token;
     uint minimum_stake;
     mapping(uint => uint) playeridtoamountstaked;
